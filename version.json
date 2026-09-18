@@ -1,6 +1,14 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0.0",
-  "apkUrl": "https://github.com/omGondhankhede/pocketflix/releases/download/v1.0.0/app-release.apk",
-  "releaseNotes": "Added dual-racing scrapers, screen fit scaling, instant chunk seeking, and auto-update support."
+  "versionCode": 2,
+  "versionName": "1.1.0",
+  "apkUrl": "https://github.com/omGondhankhede/pocketflix/releases/download/v1.1.0/app-release.apk",
+  "releaseNotes": "AddedAutomatic Stream Fallback (vidsrc.sbs): Replaced legacy fallback services with a robust, direct path-based routing structure (/embed/movie/{tmdb_id} and /embed/tv/{tmdb_id}/{season}/{episode}) to ensure smooth playback when local scrapers don't have the file.
+
+Interactive Scraper Selection Modal & "Auto" Button: Replaced automated racing with an interactive bottom sheet displaying search results from VegaMovies and RogMovies simultaneously, along with an "Auto" fallback button for instant streaming.
+
+WebView Embedded Player & Ad Blocker: Integrated webview_flutter with Android media playback settings (setMediaPlaybackRequiresUserGesture(false)) and navigation interception to block redirect ads and spam popups.
+
+Developer Easter Egg: Added a fun 10-second device shake sensor listener that triggers a glassmorphic greeting modal celebrating Om Gondhankhede (aka vinayak_builder).
+
+Auto-Updating Version JSON Workflow: Set up a GitHub Actions workflow to automatically update your version.json file whenever pubspec.yaml is updated on the main branch.."
 }
